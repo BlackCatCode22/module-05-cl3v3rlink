@@ -1,0 +1,36 @@
+Design Document: Zoo Animals Report
+
+1. Overview:
+The Zoo Animals Report program helps manage new arrivals at the zoo by creating a report listing the animals, their species, names, ages, and total counts. It uses Object-Oriented Programming (OOP) to organize animals into classes and interacts with files for data handling.
+
+2. Components:
+
+Main Class (ZooAnimalsReport):
+Runs the program and handles tasks like reading animal details, counting species, and writing reports.
+Animal Class:
+Serves as the base for all animals and stores common info like name, age, and species.
+Subclasses (Hyena, Lion, Tiger, Bear):
+Each represents a specific animal type and includes unique traits.
+3. Data Structures:
+
+ArrayList<Animal>:
+Stores animal instances read from the input file, allowing easy access and management.
+HashMap<String, Integer>:
+Keeps track of the count of each animal species for report generation.
+4. Interactions:
+
+The main class reads data from an input file and creates instances of animals based on their species.
+Animal instances are stored in an ArrayList.
+The program counts the number of animals for each species using a HashMap.
+Finally, it writes a report to an output file with species, names, ages, and counts.
+5. Design Considerations:
+
+Inheritance is used for code efficiency and to maintain a clear animal hierarchy.
+Encapsulation ensures proper access to animal attributes and methods.
+Error handling is implemented to manage exceptions during file operations.
+6. Future Improvements:
+
+Add validation checks for input data to ensure accuracy.
+Expand program capabilities to support more animal species or additional functionalities like updating records.
+Improve logging mechanisms for easier debugging.
+This design document outlines the structure, components, and interactions of the Zoo Animals Report program, focusing on simplicity and clarity.
